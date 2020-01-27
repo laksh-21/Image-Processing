@@ -1,14 +1,20 @@
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
+from os.path import abspath, dirname
+
+BASE_PATH = abspath(dirname(__file__))
+DATA_PATH = BASE_PATH + '/data/'
+IMG_PATH = DATA_PATH + 'hedgie.jpg'
+LOGO_PATH = DATA_PATH + 'yeet.jpg'
 
 # image to put logo on
-img = cv2.imread(filename='F:/Codes/PythonCodes/Image Processing/OpenCV/Overlay/data/hedgie.jpg')
+img = cv2.imread(filename=IMG_PATH)
 img = cv2.resize(src=img, dsize=(600, 600))
 imgf = img
 cv2.imshow('og', img)
 # image of logo
-logo = cv2.imread(filename='F:/Codes/PythonCodes/Image Processing/OpenCV/Overlay/data/yeet.jpg')
+logo = cv2.imread(filename=LOGO_PATH)
 logo = cv2.resize(src=logo, dsize=(300, 300))
 # create ROI
 

@@ -1,7 +1,12 @@
 import cv2
 import numpy as np
+from os.path import abspath, dirname
 
-img = cv2.imread(filename='data/colors.png')
+BASE_PATH = abspath(dirname(__file__))
+DATA_PATH = BASE_PATH + '/data/'
+IMG_PATH = DATA_PATH + 'colors.png'
+
+img = cv2.imread(filename=IMG_PATH)
 
 
 def color(event, x, y, flags, param):
