@@ -3,12 +3,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # image to put logo on
-img = cv2.imread(filename='data/hedgie.jpg')
+img = cv2.imread(filename='F:/Codes/PythonCodes/Image Processing/OpenCV/Overlay/data/hedgie.jpg')
 img = cv2.resize(src=img, dsize=(600, 600))
 imgf = img
 cv2.imshow('og', img)
 # image of logo
-logo = cv2.imread(filename='data/yeet.jpg')
+logo = cv2.imread(filename='F:/Codes/PythonCodes/Image Processing/OpenCV/Overlay/data/yeet.jpg')
 logo = cv2.resize(src=logo, dsize=(300, 300))
 # create ROI
 
